@@ -51,6 +51,19 @@ while (true)
             }
             break;
 
+        case "3":
+            if (grades.Count == 0)
+            {
+                Console.WriteLine("⚠️ No grades available to calculate average.");
+            }
+            else
+            {
+                double average = grades.Average();
+                Console.WriteLine($"📊 Average grade: {average:F2}");
+            }
+            break;
+
+
         case "5":
             Console.WriteLine("Goodbye!");
             return;
