@@ -24,27 +24,27 @@ while (true)
                 if (grade >= 0 && grade <= 20)
                 {
                     grades.Add(grade);
-                    Console.WriteLine("✅ Grade added successfully.");
+                    Console.WriteLine(" Grade added successfully.");
                 }
                 else
                 {
-                    Console.WriteLine("❌ Grade must be between 0 and 20.");
+                    Console.WriteLine(" Grade must be between 0 and 20.");
                 }
             }
             else
             {
-                Console.WriteLine("❌ Invalid input. Please enter a number.");
+                Console.WriteLine(" Invalid input. Please enter a number.");
             }
             break;
 
         case "2":
             if (grades.Count == 0)
             {
-                Console.WriteLine("⚠️ No grades have been added yet.");
+                Console.WriteLine(" No grades have been added yet.");
             }
             else
             {
-                Console.WriteLine("📋 List of all grades:");
+                Console.WriteLine(" List of all grades:");
                 for (int i = 0; i < grades.Count; i++)
                 {
                     Console.WriteLine($"Grade {i + 1}: {grades[i]}");
@@ -55,18 +55,18 @@ while (true)
         case "3":
             if (grades.Count == 0)
             {
-                Console.WriteLine("⚠️ No grades available to calculate average.");
+                Console.WriteLine(" No grades available to calculate average.");
             }
             else
             {
                 double average = grades.Average();
-                Console.WriteLine($"📊 Average grade: {average:F2}");
+                Console.WriteLine($" Average grade: {average:F2}");
             }
             break;
         case "4":
             if(grades.Count == 0)
             {
-                Console.WriteLine("⚠️ No grades available.");
+                Console.WriteLine(" No grades available.");
 
             }
             else
